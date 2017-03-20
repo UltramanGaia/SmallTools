@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "make",
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "clean"
+        },
+        {
+            // 这里需要改，server改成与launch.json中的prelaunchtask一样的
+            "taskName": "server",
+            "problemMatcher":{
+                "owner":"cpp",
+                "fileLocation":["relative","${workspaceRoot}"],
+                "pattern":{
+                    "regexp": "^([^\\\\s].*)\\\\((\\\\d+,\\\\d+)\\\\):\\\\s*(.*)$",
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                }
+            }
+        }
+    ]
+}
