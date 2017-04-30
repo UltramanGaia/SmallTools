@@ -1,0 +1,14 @@
+17-04-30 20:36:57 F:../DrcomClient-ppoe/main.cpp L:32 C:test
+17-04-30 20:36:57 Object::connect: No such slot Drcomauthsvr::getReturn()
+17-04-30 20:36:57 F:../DrcomClient-ppoe/drcomauthsvr.cpp L:101 C:export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/DrClient/
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:SET 81X 001 
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:STM 802.1X ???????????????
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:STM ?????????????????.
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:VER 0.8ldrv1.0(U62.R110908)(1x)Build(k42.20160426)
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:AUT 00000001
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:SUC 
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:ADP 2 IP:110.64.90.109|GW:|MAC:68F728BD8E42@enp2s0 IP:|GW:|MAC:C48E8F73FBE7@wlp3s0
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:SET 81X 001 
+17-04-30 20:36:59 F:../DrcomClient-ppoe/drauthcomm.cpp L:168 C:SUC 
+17-04-30 20:37:02 F:../DrcomClient-ppoe/drppoe.cpp L:559 C:
+17-04-30 20:37:02 QProcess: Destroyed while process is still running.
