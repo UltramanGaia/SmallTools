@@ -1,31 +1,46 @@
-    set nocompatible              " be iMproved  
-    filetype off                  " required!  
-      
-    set rtp+=~/.vim/bundle/vundle/  
-    call vundle#rc()  
-      
-    " let Vundle manage Vundle  
-    " required!   
-    Bundle 'gmarik/vundle'  
-      
-    " 可以通过以下四种方式指定插件的来源  
-    " a) 指定Github中vim-scripts仓库中的插件，直接指定插件名称即可，插件明中的空格使用“-”代替。  
-    Bundle 'L9'  
-      
-    " b) 指定Github中其他用户仓库的插件，使用“用户名/插件名称”的方式指定  
-    Bundle 'tpope/vim-fugitive'  
-    Bundle 'Lokaltog/vim-easymotion'  
-    Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}  
-    Bundle 'tpope/vim-rails.git'  
-      
-    " c) 指定非Github的Git仓库的插件，需要使用git地址  
-    Bundle 'git://git.wincent.com/command-t.git'  
-      
-    " d) 指定本地Git仓库中的插件  
-    Bundle 'file:///Users/gmarik/path/to/plugin'  
-      
-    filetype plugin indent on     " required!  
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
     " 各种个人配置
     " 语法高亮
@@ -37,5 +52,4 @@
     set nu
     " tab = 4
     set ts=4
-
 
